@@ -2,7 +2,7 @@ defmodule ElixirFizzBuzzTest do
   use ExUnit.Case
   doctest ElixirFizzBuzz
 
-  test "given a number not devisable by 3 or 5 is return as is" do
+  test "given a number not divisible by 3 or 5 is return as is" do
     assert ElixirFizzBuzz.main(1) == 1
     assert ElixirFizzBuzz.main(2) == 2
     assert ElixirFizzBuzz.main(4) == 4
@@ -16,5 +16,13 @@ defmodule ElixirFizzBuzzTest do
     assert ElixirFizzBuzz.main(19) == 19
   end
 
-  
+  test "given 3 return Fizz" do
+    assert ElixirFizzBuzz.main(3) == "Fizz"
+  end
+
+  test "given 5 return Buzz" do
+    assert ElixirFizzBuzz.main(5) == "Buzz"
+  end
+
+
 end

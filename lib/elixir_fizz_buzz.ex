@@ -1,6 +1,10 @@
 defmodule ElixirFizzBuzz do
 
   def main(input) do
-    input
+    cond do
+    rem(input, 3) == 0 -> "Fizz"
+    rem(input, 5) == 0 -> "Buzz"
+    true -> input
+    end
   end
 end
