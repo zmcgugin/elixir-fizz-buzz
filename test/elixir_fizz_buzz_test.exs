@@ -18,10 +18,18 @@ defmodule ElixirFizzBuzzTest do
 
   test "given 3 return Fizz" do
     assert ElixirFizzBuzz.main(3) == "Fizz"
+    assert ElixirFizzBuzz.main(6) == "Fizz"
+    assert ElixirFizzBuzz.main(12) == "Fizz"
+    assert ElixirFizzBuzz.main(18) == "Fizz"
   end
 
   test "given 5 return Buzz" do
     assert ElixirFizzBuzz.main(5) == "Buzz"
+    assert ElixirFizzBuzz.main(10) == "Buzz"
+  end
+
+  test "given 15 return FizzBuzz" do
+    assert ElixirFizzBuzz.main(15) == "FizzBuzz"
   end
 
 
