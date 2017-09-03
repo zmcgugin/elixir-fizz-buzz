@@ -1,6 +1,6 @@
 defmodule ElixirFizzBuzz do
 
-  def hello do
-    :world
+  def main(input) do
+    input
   end
 end

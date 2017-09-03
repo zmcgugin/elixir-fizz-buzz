@@ -2,7 +2,19 @@ defmodule ElixirFizzBuzzTest do
   use ExUnit.Case
   doctest ElixirFizzBuzz
 
-  test "greets the world" do
-    assert ElixirFizzBuzz.hello() == :world
+  test "given a number not devisable by 3 or 5 is return as is" do
+    assert ElixirFizzBuzz.main(1) == 1
+    assert ElixirFizzBuzz.main(2) == 2
+    assert ElixirFizzBuzz.main(4) == 4
+    assert ElixirFizzBuzz.main(7) == 7
+    assert ElixirFizzBuzz.main(8) == 8
+    assert ElixirFizzBuzz.main(11) == 11
+    assert ElixirFizzBuzz.main(13) == 13
+    assert ElixirFizzBuzz.main(14) == 14
+    assert ElixirFizzBuzz.main(16) == 16
+    assert ElixirFizzBuzz.main(17) == 17
+    assert ElixirFizzBuzz.main(19) == 19
   end
+
+  
 end
